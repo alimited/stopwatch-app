@@ -1,0 +1,19 @@
+<div class="sw-container">
+    <div class="stopwatch">
+        <span>{{hr}} : </span>
+        <span>{{min}} : </span>
+        <span>{{sec}} : </span>
+        <span>{{ms}}</span>
+    </div>
+
+    <div class="button-container">
+        <div class="start">
+            <i *ngIf="!running" class="btn" (click)="start()">start</i>
+            <i *ngIf="running" class="btn" (click)="stop()">stop</i>
+        </div>
+        <div class="reset">
+            <i class="btn" (click)="reset()">reset</i>
+        </div>
+    </div>
+
+</div>
